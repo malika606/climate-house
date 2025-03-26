@@ -268,7 +268,7 @@ margin-bottom: 20px;
     }
 
     .header {
-        padding: 60px 0;
+        padding: 80px 0;
     }
 
     .header__content_title {
@@ -315,7 +315,7 @@ margin-bottom: 20px;
       font-size: 24px;
     }
     .about__stat_text {
-      font-size: 12px;
+      font-size: 9px;
       margin-top: 6px;
     }
   
@@ -324,10 +324,11 @@ margin-bottom: 20px;
         padding: 15px 0;
     }
 
-    .why__cards {
-        padding: 0;
-    }
 
+    .why__cards {
+      gap: 0px;
+      padding: 15px 0 0;
+  }
     .why__card {
         padding: 10px 30px;
     }
@@ -427,6 +428,10 @@ margin-bottom: 20px;
     font-size: 28px;
 }
 
+.container {
+  padding: 0 25px;
+}
+
 .btn {
     height: 20px;
     font-size: 8px;
@@ -434,8 +439,8 @@ margin-bottom: 20px;
 }
 
 .about__stat_text {
-    font-size: 8px;
-    margin-top: 5px;
+  font-size: 8px;
+  margin-top: 6px;
 }
 
 .about__description {
@@ -448,13 +453,25 @@ margin-bottom: 20px;
     gap: 5px;
 }
 
+.about__stats {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.about__stat {
+  flex: 1 1 80px; /* makes them responsive */
+  text-align: center;
+}
+
 .why__card {
-    padding: 10px 10px;
+  padding: 10px 5px;
 }
 
 .why__cards {
     gap: 5px;
+    padding: 20px;
 }
+
 
 .why__icon {
     width: 30px;
@@ -462,11 +479,11 @@ margin-bottom: 20px;
 }
 
 .why__card_text {
-    font-size: 7px;
+    font-size: 6px;
 }
 
 .why__card_title {
-    font-size: 10px;
+    font-size: 8px;
     margin-bottom: 5px;
 }
 
