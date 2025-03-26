@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/media.css">
+    <script src="./js/main.js"></script>
     <title>Climate House</title>
 </head>
 <body>
@@ -74,19 +75,19 @@
       <div class="why__card">
         <img src="./img/quality-icon.png" alt="Качество" class="why__icon">
         <h3 class="why__card_title">Качество</h3>
-        <p class="why__card_text">Высокое качество продукции и надёжные материалы</p>
+        <p class="why__card_text">Высокое качество продукции</p>
       </div>
   
       <div class="why__card">
         <img src="./img/speed-icon.png" alt="Скорость" class="why__icon">
         <h3 class="why__card_title">Скорость</h3>
-        <p class="why__card_text">Быстрая доставка и оперативная установка</p>
+        <p class="why__card_text">Быстрая доставка</p>
       </div>
   
       <div class="why__card">
         <img src="./img/price-icon.png" alt="Лучшая цена" class="why__icon">
         <h3 class="why__card_title">Лучшие цены</h3>
-        <p class="why__card_text">Доступные цены без скрытых расходов</p>
+        <p class="why__card_text">Доступные цены</p>
       </div>
   
     </div>
@@ -95,30 +96,121 @@
 <section class="products container" id="products">
     <h2 class="products__title title">Наша продукция</h2>
     <div class="products__cards">
-  
-      <div class="products__card">
-        <img src="./img/boiler.jpg" alt="Котлы" class="products__card_img">
+
+      <!-- Котлы -->
+      <div class="products__card product-slider">
+        <div class="product-slider__images">
+          <img src="./img/kotyol.png" class="active" alt="Котел 1">
+          <img src="./img/kotyol2.jpg" alt="Котел 2">
+        </div>
+        <button class="slider-arrow left">&lt;</button>
+        <button class="slider-arrow right">&gt;</button>
         <h3 class="products__card_title">Котлы</h3>
         <p class="products__card_text">Надёжные и энергоэффективные решения для отопления.</p>
-        <a href="#!" class="products__card_btn btn">Смотреть все</a>
       </div>
-  
-      <div class="products__card">
-        <img src="./img/pipes.jpg" alt="Трубы" class="products__card_img">
-        <h3 class="products__card_title">Трубы</h3>
-        <p class="products__card_text">Широкий выбор труб для водоснабжения и отопления.</p>
-        <a href="#!" class="products__card_btn btn">Смотреть все</a>
+    
+      <!-- Трубы и фитинги -->
+      <div class="products__card product-slider">
+        <div class="product-slider__images">
+          <img src="./img/pipes.jpg" class="active" alt="Трубы 1">
+          <img src="./img/fitting.jpg" alt="Фитинги 1">
+          <img src="./img/fitting2.jpg" alt="Фитинги 2">
+          <img src="./img/fitting3.jpg" alt="Фитинги 3">
+        </div>
+        <button class="slider-arrow left">&lt;</button>
+        <button class="slider-arrow right">&gt;</button>
+        <h3 class="products__card_title">Трубы и фитинги</h3>
+        <p class="products__card_text">Широкий выбор труб и фитингов для водоснабжения и отопления.</p>
       </div>
-  
-      <div class="products__card">
-        <img src="./img/radiators.jpg" alt="Радиаторы" class="products__card_img">
+    
+      <!-- Радиаторы -->
+      <div class="products__card product-slider">
+        <div class="product-slider__images">
+          <img src="./img/radiator.jpg" class="active" alt="Радиатор 1">
+          <img src="./img/radiator2.jpg" alt="Радиатор 2">
+        </div>
+        <button class="slider-arrow left">&lt;</button>
+        <button class="slider-arrow right">&gt;</button>
         <h3 class="products__card_title">Радиаторы</h3>
         <p class="products__card_text">Современные радиаторы для эффективного обогрева помещений.</p>
-        <a href="#!" class="products__card_btn btn">Смотреть все</a>
       </div>
-  
+    
+      <!-- Фильтры -->
+      <div class="products__card product-slider">
+        <div class="product-slider__images">
+          <img src="./img/filter.png" class="active" alt="Фильтр 1">
+          <img src="./img/filter2.jpg" alt="Фильтр 2">
+        </div>
+        <button class="slider-arrow left">&lt;</button>
+        <button class="slider-arrow right">&gt;</button>
+        <h3 class="products__card_title">Фильтры</h3>
+        <p class="products__card_text">Эффективная очистка воды для бытового и промышленного использования.</p>
+      </div>
+    
+      <!-- Насосы -->
+      <div class="products__card product-slider">
+        <div class="product-slider__images">
+          <img src="./img/pump.jpg" class="active" alt="Насос 1">
+          <img src="./img/pump2.jpg" alt="Насос 2">
+          <img src="./img/pump3.jpg" alt="Насос 3">
+        </div>
+        <button class="slider-arrow left">&lt;</button>
+        <button class="slider-arrow right">&gt;</button>
+        <h3 class="products__card_title">Насосы</h3>
+        <p class="products__card_text">Высокопроизводительные насосы для систем отопления и водоснабжения.</p>
+      </div>
+    
+      <!-- Бойлеры -->
+      <div class="products__card product-slider">
+        <div class="product-slider__images">
+          <img src="./img/boiler.png" class="active" alt="Бойлер 1">
+          <img src="./img/boiler2.gif" alt="Бойлер 2">
+        </div>
+        <button class="slider-arrow left">&lt;</button>
+        <button class="slider-arrow right">&gt;</button>
+        <h3 class="products__card_title">Бойлеры</h3>
+        <p class="products__card_text">Надёжные бойлеры для стабильного горячего водоснабжения.</p>
+      </div>
+    
+    </div>
+    
+  </section>
+
+  <section class="brands">
+    <div class="brands__slider">
+      <div class="brands__track">
+        <img src="./img/brand1.png" alt="Brand 1" />
+        <img src="./img/brand2.png" alt="Brand 2" />
+        <img src="./img/brand3.jpg" alt="Brand 3" />
+        <img src="./img/brand4.png" alt="Brand 4" />
+        <img src="./img/brand5.png" alt="Brand 5" />
+        <img src="./img/brand6.png" alt="Brand 5" />
+        <img src="./img/brand7.png" alt="Brand 5" />
+        <img src="./img/brand8.png" alt="Brand 5" />
+        <!-- duplicate for smooth loop -->
+        <img src="./img/brand1.png" alt="Brand 1" />
+        <img src="./img/brand2.png" alt="Brand 2" />
+        <img src="./img/brand3.jpg" alt="Brand 3" />
+        <img src="./img/brand4.png" alt="Brand 4" />
+        <img src="./img/brand5.png" alt="Brand 5" />
+        <img src="./img/brand6.png" alt="Brand 5" />
+        <img src="./img/brand7.png" alt="Brand 5" />
+        <img src="./img/brand8.png" alt="Brand 5" />
+      </div>
     </div>
   </section>
+
+  <section class="service">
+    <div class="service__container container">
+      <h2 class="service__title title">Сервисный центр</h2>
+      <p class="service__text">
+        Наш сервисный центр обеспечивает ремонт и обслуживание котлов и другой продукции Climate House. Квалифицированные мастера и оригинальные запчасти гарантируют надёжность.
+      </p>
+      <img src="./img/service-logo.png" alt="Service Center Logo" class="service__logo" />
+    </div>
+  </section>
+
+
 <!-- Contact Section -->
 <section class="contact" id="contacts">
     <h2 class="contact__title title">Контакты</h2>
@@ -126,9 +218,21 @@
   
       <div class="contact__info">
         <p class="contact__item"><img src="./img/location-icon.png" alt="">Ташкент, Юнусабадский район, поселок Юнусабад, 18-й микрорайон, 41Б</p>
-        <a href="tel:+998901234567"><p class="contact__item"><img src="./img/phone-icon.png" alt="">+998 (88) 0515515</p></a>
-        <p class="contact__item"><img src="./img/time-icon.png" alt=""> Пн–Сб: 09:00–18:00</p>
-        <p class="contact__item"><img src="./img/instagram-icon.png" alt=""> @climatehouse.uz</p>
+        <p class="contact__item">
+          <img src="./img/phone-icon.png" alt="">
+          <span>
+            <a href="tel:+998880515515">+998 (88) 0515515</a><br>
+            <a href="tel:+998880525515">+998 (88) 0525515</a>
+          </span>
+        </p>
+        <p class="contact__item"><img src="./img/time-icon.png" alt=""> Пн–Вс: 08:00–20:00</p>
+        <a href="https://instagram.com/climatehouse.uz" target="_blank" class="contact__item">
+          <img src="./img/instagram-icon.png" alt="instagram-icon"> @climatehouse.uz
+        </a>
+        
+        <a href="https://t.me/Thermoeuroservice" target="_blank" class="contact__item">
+          <img src="./img/telegram-icon.png" alt="telegram-icon"> @Thermoeuroservice
+        </a>
       </div>
   
       <div class="contact__map">

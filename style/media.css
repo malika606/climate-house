@@ -1,7 +1,7 @@
 @media(max-width:1200px) {
-    .container {
-        padding: 0 20px;
-      }
+  .container {
+    padding: 0 50px;
+}
     
       /* About Section */
       .about__stats {
@@ -31,6 +31,10 @@
         width: 26px;
         height: 26px;
       }
+
+      .contact {
+        padding: 10px 60px;
+      }
 }
 
 @media (max-width: 992px) {
@@ -56,7 +60,7 @@
   
     /* Header adjustments */
     .header {
-padding: 110px 0;
+padding: 140px 0;
     }
 
     .header__content_title {
@@ -128,11 +132,11 @@ font-size: 24px;
     }
 
     .why__card_text {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .why__cards {
-      gap: 30px;
+      gap: 10px;
       padding: 25px 0 0;
     }
     .why__icon {
@@ -158,15 +162,21 @@ font-size: 14px;
 font-size: 10px;
     }
 
-    .products__card {
-      padding: 20px;
-      min-width: 200px;
+    .products__card,
+    .product-slider {
+      flex: 0 0 calc(33.333% - 20px);
+      max-width: calc(33.333% - 20px);
+    }
+
+    .service__text {
+      font-size: 12px;
+      margin: 0 auto 0;
     }
   
     /* Contact section stacked layout */
     .contact__title {
 font-size: 20px;
-margin-top: 0;
+margin-top: 15px;
 margin-bottom: 20px;
     }
 
@@ -185,6 +195,10 @@ margin-bottom: 20px;
       text-align: center;
       margin-bottom: 10px;
     }
+
+    .contact__item a {
+      font-size: 10px;
+  }
     
     .contact__map {
       width: 50%;
@@ -236,6 +250,14 @@ margin-bottom: 20px;
       width: 40px;
       height: 40px;
     }
+
+    .why__card {
+      padding: 10px 50px;
+  }
+
+  .why__card_text {
+    font-size: 10px;
+}
   
     /* Product cards smaller */
     .products__card {
@@ -245,6 +267,14 @@ margin-bottom: 20px;
   
     .products__cards {
         padding-bottom: 30px;
+    }
+
+    .service__text {
+      font-size: 10px;
+    }
+
+    .service {
+      padding: 10px 0 0;
     }
 
     /* Center map */
@@ -262,21 +292,26 @@ margin-bottom: 20px;
   }
 
   @media (max-width: 576px) {
+
+    .container {
+      padding: 0px 20px;
+  }
+
     /* Navbar shrink */
     .nav {
       height: 35px;
     }
 
     .header {
-        padding: 80px 0;
-    }
+      padding: 130px 0;
+  }
 
     .header__content_title {
-        font-size: 30px;
+        font-size: 36px;
     }
 
     .header__content_text {
-        font-size: 10px;
+        font-size: 12px;
         margin-bottom: 25px;
     }
 
@@ -355,6 +390,10 @@ margin-bottom: 20px;
         margin: 0 auto 5px
     }
 
+    .products__cards {
+      justify-content: center;
+    }
+    
     .products__card_img {
         height: 125px;
         margin-bottom: 10px;
@@ -374,7 +413,7 @@ margin-bottom: 20px;
 
     /* Contact */
     .contact__item {
-      font-size: 9px;
+      font-size: 10px;
     }
     .contact__map_frame {
       height: 160px;
@@ -391,6 +430,15 @@ margin-bottom: 20px;
   }
 
   @media(max-width:375px) {
+
+    .container {
+      padding: 0px 15px;
+  }
+
+  .header {
+    padding: 110px 0;
+}
+
 .logo {
     gap: 5px;
 }
@@ -415,36 +463,29 @@ margin-bottom: 20px;
     bottom: -10px; /* gives more breathing space below the text */
   } 
 
-  .header {
-    padding: 70px 0;
-}
 
 .header__content_text {
-    font-size: 8px;
+    font-size: 10px;
     margin-bottom: 20px;
 }
 
 .header__content_title {
-    font-size: 28px;
-}
-
-.container {
-  padding: 0 25px;
+    font-size: 32px;
 }
 
 .btn {
-    height: 20px;
-    font-size: 8px;
-    padding: 0 10px;
+    height: 25px;
+    font-size: 10px;
+    padding: 0 15px;
 }
 
 .about__stat_text {
-  font-size: 8px;
-  margin-top: 6px;
+  font-size: 9px;
+  margin-top: 8px;
 }
 
 .about__description {
-    font-size: 8px;
+    font-size: 9px;
     line-height: 1.4;
 }
 
@@ -479,11 +520,11 @@ margin-bottom: 20px;
 }
 
 .why__card_text {
-    font-size: 6px;
+    font-size: 8px;
 }
 
 .why__card_title {
-    font-size: 8px;
+    font-size: 10px;
     margin-bottom: 5px;
 }
 
@@ -505,12 +546,33 @@ margin-bottom: 20px;
     margin-bottom: 10px;
 }
 
+.brands {
+  padding: 10px 0;
+}
+
+.brands__track {
+  gap: 5px;
+}
+
+.service {
+  padding: 0px 0 0;
+}
+
+.service__logo {
+  width: 70px;
+}
+
 .contact {
-    padding: 15px 0;
+  padding: 5px 0;
+}
+
+.contact__info {
+  gap: 5px;
+  padding: 0 40px;
 }
 
 .contact__item {
-    font-size: 7px;
+    font-size: 10px;
 }
 
 .footer__text {
