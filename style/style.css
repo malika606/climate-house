@@ -74,6 +74,63 @@ body {
   align-items: center;
 }
 
+.lang-switcher {
+  position: relative;
+  display: inline-block;
+  font-family: var(--MB);
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  color: var(--dark);
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.arrow-icon {
+  width: 15px;
+  height: 15px;
+  transition: transform 0.3s ease;
+}
+
+.lang-switcher.open .arrow-icon {
+  transform: rotate(180deg);
+}
+
+.lang-options {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  border: 1px solid var(--dark);
+  list-style: none;
+  padding: 5px 0;
+  margin: 5px 0 0;
+  display: none;
+  z-index: 99;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.lang-switcher.open .lang-options {
+  display: block;
+}
+
+.lang-options li {
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--dark);
+}
+
+.lang-options li:hover {
+  background-color: #f0f0f0;
+}
+
+
 .logo {
     display: flex;
     align-items: center;

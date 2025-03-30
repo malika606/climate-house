@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/media.css">
-    <script src="./js/main.js"></script>
+    <script src="./script/main.js"></script>
+    <script src="./script/lang.js"></script>
+
     <title>Climate House</title>
 </head>
 <body>
@@ -20,11 +22,22 @@
             <h1 class="visually-hidden">Climate House — отопление и сантехника</h1>
           </a>          
       <ul class="nav__list">
-        <li class="nav__list_link"><a href="#home"><span class="padding">Главная</span></a></li>
-        <li class="nav__list_link"><a href="#about"><span class="padding">О нас</span></a></li>
-        <li class="nav__list_link"><a href="#products"><span class="padding">Продукция</span></a></li>
-        <li class="nav__list_link"><a href="#contacts"><span class="padding">Контакты</span></a></li>
+        <li class="nav__list_link"><a href="#home"><span class="padding" data-i18n="navbar.home">Главная</span></a></li>
+        <li class="nav__list_link"><a href="#about"><span class="padding" data-i18n="navbar.about">О нас</span></a></li>
+        <li class="nav__list_link"><a href="#products"><span class="padding" data-i18n="navbar.products">Продукция</span></a></li>
+        <li class="nav__list_link"><a href="#contacts"><span class="padding" data-i18n="navbar.contacts">Контакты</span></a></li>
       </ul>
+      <div class="lang-switcher">
+        <button class="lang-btn" id="langToggle">
+          <span id="currentLang">EN</span>
+          <img src="./img/arrow-down.svg" alt="▼" class="arrow-icon">
+        </button>
+        <ul class="lang-options" id="langOptions">
+          <li data-lang="en">EN</li>
+          <li data-lang="ru">RU</li>
+          <li data-lang="uz">UZ</li>
+        </ul>
+      </div>
     </div>
   </nav>
   
@@ -32,34 +45,34 @@
   <header class="header" id="home">
     <img src="./img/header__bg.png" alt="" class="header__bg">
     <div class="header__content container">
-      <h1 class="header__content_title">Надёжная продукция сантехники</h1>
-      <p class="header__content_text">Качественные сантехнические решения для дома и бизнеса</p>
+      <h1 class="header__content_title" data-i18n="header.title">Надёжная продукция сантехники</h1>
+      <p class="header__content_text" data-i18n="header.subtitle">Качественные сантехнические решения для дома и бизнеса</p>
       <div class="header__btns">
-        <a href="#contacts" class="header__btn btn">Связаться с нами</a>
+        <a href="#contacts" class="header__btn btn" data-i18n="header.button">Связаться с нами</a>
       </div>
     </div>
   </header>
   <main class="main">
     <!-- About Section -->
     <section class="about container" id="about">
-      <h2 class="about__title title">О нас</h2>
+      <h2 class="about__title title" data-i18n="about.title">О нас</h2>
       <div class="about__content">
           <div class="about__stats">
             <div class="about__stat">
               <h3 class="about__stat_number">20+</h3>
-              <p class="about__stat_text">лет на рынке</p>
+              <p class="about__stat_text" data-i18n="about.years">лет на рынке</p>
             </div>
             <div class="about__stat">
               <h3 class="about__stat_number">10+</h3>
-              <p class="about__stat_text">филиалов по стране</p>
+              <p class="about__stat_text" data-i18n="about.branches">филиалов по стране</p>
             </div>
             <div class="about__stat">
               <h3 class="about__stat_number">25+</h3>
-              <p class="about__stat_text">международных партнёров</p>
+              <p class="about__stat_text" data-i18n="about.partners">международных партнёров</p>
             </div>
           </div>
         <div class="about__description">
-          <p>
+          <p data-i18n="about.description">
             <strong>Climate House</strong> — это надёжный поставщик котельного оборудования, труб и другой сантехнической продукции для дома и бизнеса. Мы предлагаем широкий ассортимент товаров — от современных водонагревателей до прочных труб и фитингов, полностью соответствующих стандартам качества.
             Наша цель — обеспечить вас всем необходимым для эффективной и безопасной системы водоснабжения и отопления.
           </p>
@@ -69,32 +82,32 @@
   </main>
 <!-- Why Choose Us Section -->
 <section class="why">
-    <h2 class="why__title title">Почему выбирают нас?</h2>
+    <h2 class="why__title title" data-i18n="why.title">Почему выбирают нас?</h2>
     <div class="why__cards">
   
       <div class="why__card">
         <img src="./img/quality-icon.png" alt="Качество" class="why__icon">
-        <h3 class="why__card_title">Качество</h3>
-        <p class="why__card_text">Высокое качество продукции</p>
+        <h3 class="why__card_title" data-i18n="why.quality.title">Качество</h3>
+        <p class="why__card_text" data-i18n="why.quality.text">Высокое качество продукции</p>
       </div>
   
       <div class="why__card">
         <img src="./img/speed-icon.png" alt="Скорость" class="why__icon">
-        <h3 class="why__card_title">Скорость</h3>
-        <p class="why__card_text">Быстрая доставка</p>
+        <h3 class="why__card_title" data-i18n="why.speed.title">Скорость</h3>
+        <p class="why__card_text" data-i18n="why.speed.text">Быстрая доставка</p>
       </div>
   
       <div class="why__card">
         <img src="./img/price-icon.png" alt="Лучшая цена" class="why__icon">
-        <h3 class="why__card_title">Лучшие цены</h3>
-        <p class="why__card_text">Доступные цены</p>
+        <h3 class="why__card_title" data-i18n="why.price.title">Лучшие цены</h3>
+        <p class="why__card_text" data-i18n="why.price.text">Доступные цены</p>
       </div>
   
     </div>
   </section>
    <!-- Products Section -->
 <section class="products container" id="products">
-    <h2 class="products__title title">Наша продукция</h2>
+    <h2 class="products__title title" data-i18n="products.title">Наша продукция</h2>
     <div class="products__cards">
 
       <!-- Котлы -->
@@ -105,8 +118,8 @@
         </div>
         <button class="slider-arrow left">&lt;</button>
         <button class="slider-arrow right">&gt;</button>
-        <h3 class="products__card_title">Котлы</h3>
-        <p class="products__card_text">Надёжные и энергоэффективные решения для отопления.</p>
+        <h3 class="products__card_title" data-i18n="products.heaters.title">Котлы</h3>
+        <p class="products__card_text" data-i18n="products.heaters.text">Надёжные и энергоэффективные решения для отопления.</p>
       </div>
     
       <!-- Трубы и фитинги -->
@@ -119,8 +132,8 @@
         </div>
         <button class="slider-arrow left">&lt;</button>
         <button class="slider-arrow right">&gt;</button>
-        <h3 class="products__card_title">Трубы и фитинги</h3>
-        <p class="products__card_text">Широкий выбор труб и фитингов для водоснабжения и отопления.</p>
+        <h3 class="products__card_title" data-i18n="products.pipes.title">Трубы и фитинги</h3>
+        <p class="products__card_text" data-i18n="products.pipes.text">Широкий выбор труб и фитингов для водоснабжения и отопления.</p>
       </div>
     
       <!-- Радиаторы -->
@@ -131,8 +144,8 @@
         </div>
         <button class="slider-arrow left">&lt;</button>
         <button class="slider-arrow right">&gt;</button>
-        <h3 class="products__card_title">Радиаторы</h3>
-        <p class="products__card_text">Современные радиаторы для эффективного обогрева помещений.</p>
+        <h3 class="products__card_title" data-i18n="products.radiators.title">Радиаторы</h3>
+        <p class="products__card_text" data-i18n="products.radiators.text">Современные радиаторы для эффективного обогрева помещений.</p>
       </div>
     
       <!-- Фильтры -->
@@ -143,8 +156,8 @@
         </div>
         <button class="slider-arrow left">&lt;</button>
         <button class="slider-arrow right">&gt;</button>
-        <h3 class="products__card_title">Фильтры</h3>
-        <p class="products__card_text">Эффективная очистка воды для бытового и промышленного использования.</p>
+        <h3 class="products__card_title" data-i18n="products.filters.title">Фильтры</h3>
+        <p class="products__card_text" data-i18n="products.filters.text">Эффективная очистка воды для бытового и промышленного использования.</p>
       </div>
     
       <!-- Насосы -->
@@ -156,8 +169,8 @@
         </div>
         <button class="slider-arrow left">&lt;</button>
         <button class="slider-arrow right">&gt;</button>
-        <h3 class="products__card_title">Насосы</h3>
-        <p class="products__card_text">Высокопроизводительные насосы для систем отопления и водоснабжения.</p>
+        <h3 class="products__card_title" data-i18n="products.pumps.title">Насосы</h3>
+        <p class="products__card_text" data-i18n="products.pumps.text">Высокопроизводительные насосы для систем отопления и водоснабжения.</p>
       </div>
     
       <!-- Бойлеры -->
@@ -168,8 +181,8 @@
         </div>
         <button class="slider-arrow left">&lt;</button>
         <button class="slider-arrow right">&gt;</button>
-        <h3 class="products__card_title">Бойлеры</h3>
-        <p class="products__card_text">Надёжные бойлеры для стабильного горячего водоснабжения.</p>
+        <h3 class="products__card_title" data-i18n="products.boilers.title">Бойлеры</h3>
+        <p class="products__card_text" data-i18n="products.boilers.text">Надёжные бойлеры для стабильного горячего водоснабжения.</p>
       </div>
     
     </div>
@@ -202,8 +215,8 @@
 
   <section class="service">
     <div class="service__container container">
-      <h2 class="service__title title">Сервисный центр</h2>
-      <p class="service__text">
+      <h2 class="service__title title" data-i18n="service.title">Сервисный центр</h2>
+      <p class="service__text" data-i18n="service.text">
         Наш сервисный центр обеспечивает ремонт и обслуживание котлов и другой продукции Climate House. Квалифицированные мастера и оригинальные запчасти гарантируют надёжность.
       </p>
       <img src="./img/service-logo.png" alt="Service Center Logo" class="service__logo" />
@@ -213,11 +226,11 @@
 
 <!-- Contact Section -->
 <section class="contact" id="contacts">
-    <h2 class="contact__title title">Контакты</h2>
+    <h2 class="contact__title title" data-i18n="contact.title">Контакты</h2>
     <div class="contact__content">
   
       <div class="contact__info">
-        <p class="contact__item"><img src="./img/location-icon.png" alt="">Ташкент, Юнусабадский район, поселок Юнусабад, 18-й микрорайон, 41Б</p>
+        <p class="contact__item"><img src="./img/location-icon.png" alt=""><span data-i18n="contact.address">Ташкент, Юнусабадский район, поселок Юнусабад, 18-й микрорайон, 41Б</span></p>
         <p class="contact__item">
           <img src="./img/phone-icon.png" alt="">
           <span>
@@ -225,7 +238,7 @@
             <a href="tel:+998880525515">+998 (88) 0525515</a>
           </span>
         </p>
-        <p class="contact__item"><img src="./img/time-icon.png" alt=""> Пн–Вс: 08:00–20:00</p>
+        <p class="contact__item"><img src="./img/time-icon.png" alt=""><span data-i18n="contact.schedule">Пн–Вс: 08:00–20:00</span></p>
         <a href="https://instagram.com/climatehouse.uz" target="_blank" class="contact__item">
           <img src="./img/instagram-icon.png" alt="instagram-icon"> @climatehouse.uz
         </a>
@@ -244,7 +257,7 @@
 <!-- Footer -->
 <footer class="footer">
     <div class="footer__item container">
-      <p class="footer__text">© Climate House, 2025. Все права защищены.</p>
+      <p class="footer__text" data-i18n="footer.text">© Climate House, 2025. Все права защищены.</p>
     </div>
   </footer>
        
